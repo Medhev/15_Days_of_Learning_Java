@@ -1,0 +1,5 @@
+rootProject.name = '15_Days_of_Learning_Java'
+
+include 'Day_1', 'Day_2', 'Day_3', 'Day_4', 'Day_5', 'Day_6', 'Day_7', 'Day_10', 'Day_12', 'Day_14', 'Day_15'
+
+
