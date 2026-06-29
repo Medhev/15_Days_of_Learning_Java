@@ -39,6 +39,7 @@ replay_pid*
 .buildpath
 
 # IntelliJ IDEA
+/.junie/
 /.idea/
 *.iml
 *.iws
