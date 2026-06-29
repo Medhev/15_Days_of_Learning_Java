@@ -1,16 +1,9 @@
-# Compiled class file
+# === Java/Gradle project ignores ===
+
+# Compiled class files
 *.class
 
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
+# Package files
 *.jar
 *.war
 *.nar
@@ -19,6 +12,78 @@
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+# Logs
+*.log
 hs_err_pid*
 replay_pid*
+
+# Build / output directories
+/.gradle/
+/build/
+/out/
+/bin/
+/tmp/
+/dist/
+/target/
+
+# Gradle cache and build dirs
+/gradle/**/build/
+
+# Eclipse
+.classpath
+.project
+.settings/
+.metadata/
+.externalToolBuilders/
+.recommenders
+.buildpath
+
+# IntelliJ IDEA
+/.idea/
+*.iml
+*.iws
+
+# NetBeans
+nbproject/private/
+nbbuild/
+.nb-gradle/
+
+# VS Code
+.vscode/
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Temporary and swap files
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# Test reports
+/test-results/
+/test-output/
+
+# Generated sources (if any)
+/generated/
+
+# Lombok annotation processing (IDE caches)
+/lombok-generated/
+
+# Coverage reports
+coverage/
+*.lcov
+
+# User-specific Gradle cache
+.gradle/
+
+# Other IDEs
+.idea_modules/
+
+# End of file
