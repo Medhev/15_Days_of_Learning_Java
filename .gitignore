@@ -17,17 +17,24 @@
 hs_err_pid*
 replay_pid*
 
-# Build / output directories
-/.gradle/
-/build/
-/out/
-/bin/
-/tmp/
-/dist/
-/target/
+# Build / output directories (Removed leading slashes to catch nested sub-modules)
+.gradle/
+build/
+out/
+bin/
+tmp/
+dist/
+target/
+
+# Recursive safety net for deeply nested project build/target dirs
+**/build/
+**/.gradle/
+**/target/
+**/bin/
+**/out/
 
 # Gradle cache and build dirs
-/gradle/**/build/
+**/gradle/**/build/
 
 # Eclipse
 .classpath
@@ -37,29 +44,37 @@ replay_pid*
 .externalToolBuilders/
 .recommenders
 .buildpath
+**/.settings/
+**/.classpath
+**/.project
 
-# IntelliJ IDEA
-/.junie/
-/.idea/
+# IntelliJ IDEA (Catches .idea folders globally)
+.idea/
+**/.idea/
 *.iml
+**/*.iml
 *.iws
 
 # NetBeans
 nbproject/private/
 nbbuild/
 .nb-gradle/
+**/nbproject/
 
 # VS Code
 .vscode/
+**/.vscode/
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
 # macOS
 .DS_Store
+**/.DS_Store
 
 # Windows
 Thumbs.db
+**/Thumbs.db
 
 # Temporary and swap files
 *.tmp
@@ -68,23 +83,17 @@ Thumbs.db
 *.swp
 
 # Test reports
-/test-results/
-/test-output/
+**/test-results/
+**/test-output/
 
 # Generated sources (if any)
-/generated/
+**/generated/
 
 # Lombok annotation processing (IDE caches)
-/lombok-generated/
+**/lombok-generated/
 
 # Coverage reports
 coverage/
 *.lcov
-
-# User-specific Gradle cache
-.gradle/
-
-# Other IDEs
-.idea_modules/
 
 # End of file
